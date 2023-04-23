@@ -44,11 +44,11 @@ function setPool (gender, swimDistance, swimTime, diveTime) {
 
 
 function areCandidatesResultsValid(gender, height, barReps, barSeconds, abs, runDistance, runTime, swimDistance, swimTime, diveTime) {
-    let resultHeight = minHeight (gender, height)
-    let resultPushUp = setPushUp (gender, barReps, barSeconds)
-    let resultAbs = setAbs (gender, abs)
-    let resultRun = lapRun (gender, runDistance, runTime)
-    let resultPool  = setPool (gender, swimDistance,swimTime, diveTime)
+    const resultHeight = minHeight (gender, height)
+    const resultPushUp = setPushUp (gender, barReps, barSeconds)
+    const resultAbs = setAbs (gender, abs)
+    const resultRun = lapRun (gender, runDistance, runTime)
+    const resultPool  = setPool (gender, swimDistance,swimTime, diveTime)
 
     if (resultHeight && resultPushUp && resultAbs && resultRun && resultPool) {
         return true
